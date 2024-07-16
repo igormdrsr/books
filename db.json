@@ -1,0 +1,14 @@
+{
+  "book": [
+    {
+      "id": 1,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling"
+    },
+    {
+      "id": 2,
+      "title": "Jurassic Park",
+      "author": "Michael Crichton"
+    }
+  ]
+}

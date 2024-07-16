@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import BookEdit from "./BookEdit";
 
-import { Trash, Pencil } from "@phosphor-icons/react";
+import { Trash2, SquarePen } from "lucide-react";
 
 function BookShow({ book, onDelete, onEdit }) {
   const [showEdit, setShowEdit] = useState(false);
@@ -43,18 +43,20 @@ function BookShow({ book, onDelete, onEdit }) {
           marginBottom: "1.5rem",
         }}
       >
-        <Trash
-          size={24}
-          onClick={handleDeleteClick}
-          style={{ cursor: "pointer" }}
-        />
-        <Pencil
-          size={24}
+        <SquarePen
           onClick={handleEditClick}
           style={{ cursor: "pointer" }}
         />
+        <Trash2
+          onClick={handleDeleteClick}
+          style={{ cursor: "pointer" }}
+        />
       </div>
-      <img src={`https://picsum.photos/seed/${book.id}/300/200`} alt="books" />
+      <img
+        src={`https://picsum.photos/seed/${book.id}/300/200`}
+        alt="books"
+        style={{ borderRadius: ".25rem" }}
+      />
       <div>{content}</div>
     </div>
   );
