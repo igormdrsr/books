@@ -43,14 +43,8 @@ function BookShow({ book, onDelete, onEdit }) {
           marginBottom: "1.5rem",
         }}
       >
-        <SquarePen
-          onClick={handleEditClick}
-          style={{ cursor: "pointer" }}
-        />
-        <Trash2
-          onClick={handleDeleteClick}
-          style={{ cursor: "pointer" }}
-        />
+        <SquarePen onClick={handleEditClick} style={{ cursor: "pointer" }} />
+        <Trash2 onClick={handleDeleteClick} style={{ cursor: "pointer" }} />
       </div>
       <img
         src={`https://picsum.photos/seed/${book.id}/300/200`}
